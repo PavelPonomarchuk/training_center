@@ -1,0 +1,169 @@
+.subscribe {	
+	background-image: url("modules_img/subscribe_bg.png");
+	background-size: cover;
+	height: 333px;
+	&__container {
+		padding-top: 50px;		
+		width: 1100px;
+		height: 250px;
+		margin-left: auto;
+		margin-right: auto;		
+		&-comment {					
+			width: 500px;
+			&-name {
+				font-family: Lora;
+				font-size: 36px;
+				color: #f3f4f4;
+				margin-top: 0px;
+				margin-bottom: 0px;
+			}
+			&-text {				
+				font-family: PT Sans, Open Sans, Calibri;
+				font-size: 18px;
+				color: #f3f4f4;
+				line-height: 1.7;
+			}
+		}
+		&-form {			
+			width: 500px;
+			float: right;
+			&-username {				
+				padding-bottom: 30px;
+				input {
+					height: 40px;
+					width: 450px;
+					border-radius: 5px;
+					font-size: 24px;
+					font-family: PT Sans, Open Sans, Calibri;								
+					font-style: italic;
+					color: white;					
+					background: transparent;
+					border: 1px solid white;
+				}
+				input::placeholder {
+					color: white;
+					font-family: PT Sans, Open Sans, Calibri;					
+					font-style: italic;
+					font-size: 14px;
+				}
+			}
+			&-mail {
+				padding-bottom: 30px;
+				input {
+					height: 40px;
+					width: 450px;
+					border-radius: 5px;
+					font-size: 24px;
+					font-family: PT Sans, Open Sans, Calibri;					
+					font-style: italic;
+					color: white;					
+					background: transparent;
+					border: 1px solid white;
+				}
+				input::placeholder {
+					color: white;
+					font-family: PT Sans, Open Sans, Calibri;					
+					font-style: italic;
+					font-size: 14px;
+				}
+			}
+			&-row {
+				width: 450px;
+				&-checkbox {
+					display: inline-block;
+					vertical-align: top;
+					width: 50px;
+					&-lab {
+						input {							
+							display: none;
+						}
+						span {
+							display: block;
+							position: relative;
+							width: 30px;
+							height: 30px;
+							background-color: white;							
+						}
+						input:checked + span::before {
+							content: "";
+							display: block;
+							position: absolute;							
+							background-image: url("modules_img/check-agree.png");
+							background-repeat: no-repeat;
+							background-position: center;
+							top: 2px;
+							bottom: 2px;
+							right: 2px;
+							left: 2px;
+						}
+					}
+				}
+				&-label {
+					display: inline-block;
+					vertical-align: top;					
+					width: 237px;
+					span {
+						font-family: PT Sans, Open Sans, Calibri;						
+						font-size: 18px;
+						color: #f3f4f4;
+						line-height: 1.7;						
+					}
+				}
+				&-submit {
+					display: inline-block;
+					vertical-align: top;
+					width: 155px;
+					input {
+						width: 155px;
+						height: 55px;
+						border: 2px solid white;
+						border-radius: 5px;
+						background: transparent;
+						font-family: PT Sans, Open Sans, Calibri;						
+						font-size: 16px;
+						font-weight: bold;
+						color: white;
+					}
+					input:hover {
+						background-color: rgba(255, 255, 255, 0.5);
+					}
+				}
+			}
+		}
+	}
+}
+
+.m--comment-mobile {
+	display: none;
+}
+
+@media screen and (max-width: 1199px) {
+	.subscribe {
+		&__container {
+			width: 1000px;
+		}
+	}
+}
+
+@media screen and (max-width: 999px) {
+	.subscribe {		
+		height: 400px;
+		&__container {			
+			width: auto;
+			margin-left: 50px;
+			margin-right: 50px;
+			&-comment {				
+				display: none;				
+			}
+			&-form {				
+				width: auto;
+				float: none;
+			}
+		}
+	}
+	.m--comment-mobile {
+		display: block;		
+		width: auto;
+		padding-bottom: 30px;
+	}
+}

@@ -1,0 +1,302 @@
+@mainColor: #da251c;
+
+.footer {
+	background-image: url("modules_img/footer_bg.png");
+	background-size: cover;
+	&__container {
+		width: 1200px;
+		margin-right: auto;
+		margin-left: auto;
+		text-align: center;
+		h2 {
+			font-family: Lora;
+			font-size: 30px;
+			color: white;
+			padding-top: 50px;
+			letter-spacing: 3px;
+		}
+		&-line1 {
+			width: 400px;
+			border-bottom: 1px solid @mainColor;
+			margin-left: auto;
+			margin-right: auto;			
+		}
+		&-comment {
+			width: 600px;
+			margin-left: auto;
+			margin-right: auto;
+			margin-top: 20px;
+			font-family: PT Sans, Open Sans, Calibri;			
+			font-size: 18px;
+			color: #f3f4f4;
+		}
+		&-form {
+			&-row {
+				margin-top: 30px;
+				width: 1000px;
+				margin-right: auto;
+				margin-left: auto;
+				&-col1 {
+					width: 450px;
+					input {
+						height: 40px;
+						width: 450px;
+						border-radius: 5px;
+						font-size: 20px;
+						font-family: PT Sans, Open Sans, Calibri;						
+						font-style: italic;
+						color: white;					
+						background: transparent;
+						border: 1px solid white;
+						margin-bottom: 20px;
+					}
+					input::placeholder {
+						color: white;
+						font-family: PT Sans, Open Sans, Calibri;
+						font-style: italic;
+						font-size: 14px;
+					}
+					&-caption {
+						width: 400px;
+						float: right;
+						font-family: PT Sans, Open Sans, Calibri;
+						font-size: 18px;
+						color: #f3f4f4;
+						margin-top: 0;
+						text-align: left;
+					}
+					&-lab {
+						input {							
+							display: none;
+						}
+						&-customcheck {
+							display: block;
+							position: relative;
+							width: 30px;
+							height: 30px;
+							background-color: white;							
+						}
+						input:checked + &-customcheck::before {
+							content: "";
+							display: block;
+							position: absolute;							
+							background-image: url("modules_img/check-agree.png");
+							background-repeat: no-repeat;
+							background-position: center;
+							top: 2px;
+							bottom: 2px;
+							right: 2px;
+							left: 2px;
+						}
+					}					
+				}
+				&-col2 {
+					width: 450px;					
+					float: right;
+					textarea {
+						height: 105px;
+						width: 450px;						
+						border-radius: 5px;
+						font-size: 20px;
+						font-family: PT Sans, Open Sans, Calibri;						
+						font-style: italic;						
+						color: white;										
+						background: transparent;
+						border: 1px solid white;
+						margin-bottom: 20px;
+						resize: none;
+					}
+					textarea::placeholder {											
+						color: white;
+						font-family: PT Sans, Open Sans, Calibri;						
+						font-style: italic;
+						font-size: 14px;
+					}
+					&-submit {						
+						float: right;
+						width: 155px;
+						input {
+							width: 155px;
+							height: 55px;
+							border: 2px solid white;
+							border-radius: 5px;
+							background: transparent;
+							font-family: PT Sans, Open Sans, Calibri;							
+							font-size: 16px;
+							font-weight: bold;
+							color: white;
+						}
+						input:hover {
+							background-color: rgba(255, 255, 255, 0.5);
+						}
+					}
+				}
+			}
+		}
+		&-mobileform {
+			display: none;
+			width: 450px;
+			margin-left: auto;
+			margin-right: auto;
+			&-fields {				
+				input {
+					height: 40px;
+					width: 450px;
+					margin-bottom: 30px;
+					border-radius: 5px;
+					font-size: 20px;
+					font-family: PT Sans, Open Sans, Calibri;					
+					font-style: italic;
+					color: white;
+					background: transparent;
+					border: 1px solid white;
+				}
+				input::placeholder {
+					color: white;
+					font-family: PT Sans, Open Sans, Calibri;					
+					font-style: italic;
+					font-size: 14px;
+				}
+				textarea {
+					height: 100px;
+					width: 450px;
+					border-radius: 5px;
+					font-size: 20px;
+					font-family: PT Sans, Open Sans, Calibri;					
+					font-style: italic;
+					color: white;					
+					background: transparent;
+					border: 1px solid white;
+					resize: none;
+				}
+				textarea::placeholder {
+					color: white;
+					font-family: PT Sans, Open Sans, Calibri;					
+					font-style: italic;
+					font-size: 14px;
+				}
+			}
+			&-row {
+				margin-top: 30px;
+				&-caption {
+					width: 400px;
+					float: right;
+					font-family: PT Sans, Open Sans, Calibri;					
+					font-size: 18px;
+					color: #f3f4f4;
+					margin-top: 0;
+					text-align: left;
+				}
+				&-lab {
+					input {
+						display: none;
+					}
+					&-customcheck {
+						display: block;
+						position: relative;
+						width: 30px;
+						height: 30px;
+						background-color: white;							
+					}
+					input:checked + &-customcheck::before {
+						content: "";
+						display: block;
+						position: absolute;							
+						background-image: url("modules_img/check-agree.png");
+						background-repeat: no-repeat;
+						background-position: center;
+						top: 2px;
+						bottom: 2px;
+						right: 2px;
+						left: 2px;
+					}
+				}
+			}
+			&-submit {				
+				input {
+					width: 155px;
+					height: 55px;
+					border: 2px solid white;
+					border-radius: 5px;
+					background: transparent;
+					font-family: PT Sans, Open Sans, Calibri;					
+					font-size: 16px;
+					font-weight: bold;
+					color: white;
+				}
+				input:hover {
+					background-color: rgba(255, 255, 255, 0.5);
+				}
+			}
+		}
+		&-line2 {
+			width: 400px;
+			border-bottom: 1px solid white;
+			margin-left: auto;
+			margin-right: auto;
+			margin-top: 50px;	
+		}
+		&-social {		
+			margin-left: auto;
+			margin-right: auto;
+			margin-top: 30px;			
+			a {
+				margin-right: 10px;
+				margin-left: 10px;
+			}
+		}
+		&-links {
+			width: 600px;
+			margin-top: 50px;
+			margin-right: auto;
+			margin-left: auto;
+			padding-bottom: 50px;
+			&-col1 {
+				width: 300px;				
+				text-align: left;
+				a {
+					font-family: PT Sans, Open Sans, Calibri;					
+					font-size: 18px;
+					color: white;
+					text-decoration: none;					
+				}
+			}
+			&-col2 {
+				width: 300px;
+				float: right;
+				text-align: left;
+				p {
+					margin-top: 0;					
+				}
+				a {
+					font-family: PT Sans, Open Sans, Calibri;					
+					font-size: 18px;
+					color: white;
+					text-decoration: none;						
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 1199px) {
+	.footer {
+		&__container {
+			width: 1000px;
+		}
+	}
+}
+
+@media screen and (max-width: 999px) {
+	.footer {
+		&__container {			
+			width: auto;
+			&-form {
+				display: none;
+			}
+			&-mobileform {
+				display: block;
+			}
+		}
+	}
+}

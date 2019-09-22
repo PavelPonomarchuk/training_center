@@ -1,0 +1,49 @@
+.annotation {
+	&__container {
+		width: 1200px;
+	    margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+		padding-top: 40px;
+		padding-bottom: 40px;
+		h2 {
+			font-family: Lora;
+			font-size: 30px;
+			color: #23324c;
+		}
+		p {
+			width: 800px;
+			margin-left: auto;
+		    margin-right: auto;
+		    color: #8d8d8d;
+		    font-family: PT Sans, Open Sans, Calibri;		    
+			font-size: 20px; 
+		}
+		a {
+			text-decoration: none;
+			font-family: PT Sans, Open Sans, Calibri;			
+			font-size: 20px;
+			color: #b20000;
+		}
+	}
+}
+
+@media screen and (max-width: 1199px) {
+	.annotation {
+		&__container {
+			width: 1000px;
+		}
+	}
+}
+
+@media screen and (max-width: 999px) {
+	.annotation {
+		&__container {			
+			width: auto;
+			text-align: center;
+			p {				
+				width: auto;
+			}
+		}
+	}
+}
